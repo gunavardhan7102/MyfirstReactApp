@@ -9,3 +9,23 @@
   background-color: white;
   color: darkblue;
 }
+
+/* .formSection{
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+} */
+/* 
+.inputDiv input{
+  width: 15rem;
+  height: 2rem;
+} */
+
+.submitbtn{
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-top: 5px;
+  background-color: blue;
+}

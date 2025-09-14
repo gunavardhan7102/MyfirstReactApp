@@ -7,6 +7,11 @@ import FourthComp from './propContainer/FourthComp'
 import StateMgm from './StateMgm';
 import ClickEvent from './ClickEvent';
 import ScreenSize from './ScreenSize';
+import FormEventExample from './FormEventExample';
+import Notify from './Notify';
+import SampleArray from './SampleArray';
+import GetAPI from './GetAPI';
+import PostAPI from './PostAPI';
 
 const user={
 name:'Ben',
@@ -22,7 +27,15 @@ function App() {
       <StateMgm/>
       <ClickEvent/>
       <ScreenSize/>
-   </div>
+       <FormEventExample/>
+       <Notify/>
+       <SampleArray/>
+       {/* <GetAPI/> */}
+       <PostAPI/>
+</div>
+      
+
+
   );
 }
 
