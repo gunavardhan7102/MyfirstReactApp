@@ -12,6 +12,7 @@ import Notify from './Notify';
 import SampleArray from './SampleArray';
 import GetAPI from './GetAPI';
 import PostAPI from './PostAPI';
+import ShortCircuit from './ShortCircuit';
 
 const user={
 name:'Ben',
@@ -32,6 +33,7 @@ function App() {
        <SampleArray/>
        {/* <GetAPI/> */}
        <PostAPI/>
+       <ShortCircuit/>
 </div>
       
 

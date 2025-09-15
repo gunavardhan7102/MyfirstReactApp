@@ -20,6 +20,8 @@ setdata((item)=>({
 const saveform = async(e) => {
 e.preventDefault();
 console.log(data)
+
+try{
 const res =await fetch('https://reqres.in/api/users',{
     method:'POST',
     headers: {
@@ -28,7 +30,13 @@ const res =await fetch('https://reqres.in/api/users',{
   },
   body:JSON.stringify(data)
 })
-console.log(res.status)
+alert(res.status)
+}
+catch(e){
+alert(e)
+}
+
+
 }
 
   return (
