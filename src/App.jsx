@@ -13,6 +13,16 @@ import SampleArray from './SampleArray';
 import GetAPI from './GetAPI';
 import PostAPI from './PostAPI';
 import ShortCircuit from './ShortCircuit';
+import MultiState from './MultiState';
+import FirstPage from './Routing/FirstPage';
+import SecondPage from './Routing/SecondPage';
+import ThirdPage from './Routing/ThirdPage';
+import FourthPage from './Routing/FourthPage';
+import { Routes, Route } from 'react-router-dom';
+import Navbar from './Routing/Navbar';
+import Delhi from './container/Delhi';
+import { GiftProvider } from './context/ExampleContext';
+
 
 const user={
 name:'Ben',
@@ -21,9 +31,12 @@ country: 'USA',
 continent: 'NA'
 }
 
+  const data = 'Guna'
+
 function App() {
   return (
     <div className="App">
+    <Navbar/>
       <SecondComp userobj={user} userobj2={user.city}/>
       <StateMgm/>
       <ClickEvent/>
@@ -34,6 +47,22 @@ function App() {
        {/* <GetAPI/> */}
        <PostAPI/>
        <ShortCircuit/>
+       <MultiState/>
+
+<Routes>
+  <Route path='/firstpage' element={<FirstPage/>} />
+  <Route path='/secondpage' element={<SecondPage/>} />
+  <Route path='/thirdpage' element={<ThirdPage/>} />
+  <Route path='fourthpage' element={<FourthPage/>} />
+</Routes>
+
+  <GiftProvider>
+
+  <Delhi />  
+  </GiftProvider>
+
+    
+      
 </div>
       
 

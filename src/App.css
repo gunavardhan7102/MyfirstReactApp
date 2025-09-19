@@ -29,3 +29,18 @@
   margin-top: 5px;
   background-color: blue;
 }
+
+.navSection{
+  border: 1px solid red;
+  background-color: black;
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+}
+
+.navSection ul li{
+  list-style: none;
+  display: inline-flex;
+  margin: 20px;
+  font-size: 2rem;
+}
